@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.container-input {
+    max-width: 350px;
+    margin: 17px 0px;
+}
+
+.container-input span {
+    color: white;
+    font-size: 20px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 50px;
+    background-color: rgba(236, 243, 216, 0.755);
+    height: 19px;
+    outline: none;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+
+.btn-cta {
+    height: 45px;
+    background-color: rgb(0, 234, 7);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 40px;
+    color: rgba(255, 255, 255, 0.931);
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.container-password {
+    max-width: 350px;
+    margin: 14px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title {
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    margin: 20px 0px 9px 0px;
+}
+
+.password {
+    height: 60px;
+    background-color: rgba(87, 87, 87, 0.102);
+    color: #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.201);
+    transition: transform 0.5s;
+}
+
+
+.password:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.tooltip {
+    color: white;
+    position: relative;
+    top: 20px;
+    padding: 5px 6px;
+    background-color: rgba(87, 87, 87, 0.102);
+    border: 1px solid rgba(255, 255, 255, 0.201);
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.hide {
+    display: none;
+}
+
+.container-password:hover .tooltip {
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
